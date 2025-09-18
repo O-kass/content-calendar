@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
+@Repository
 public interface ContentRepository extends ListCrudRepository<Content,Integer> {
 
     List<Content> findAllByTitleContains(String keyword);
